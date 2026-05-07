@@ -1,0 +1,13 @@
+{
+  "name": "launchdarkly-flag-automation",
+  "description": "Automatically create and manage LaunchDarkly feature flags from GitHub pull requests and issues",
+  "version": "1.0.0",
+  "author": {
+    "name": "LaunchDarkly",
+    "email": "integrations@launchdarkly.com"
+  },
+  "license": "MIT",
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks.json"
+}
