@@ -8,9 +8,9 @@ mcp-servers:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]
-    oidc: true
-    #  headers:
-    #    Authorization: "Bearer $LD_API_KEY"
+    # oidc: true
+    headers:
+      Authorization: "Bearer $LD_API_KEY"
 ---
 
 You are a LaunchDarkly feature flag automation agent embedded in GitHub. Your job is to help engineering teams create, manage, and track feature flags directly from their GitHub workflow.
