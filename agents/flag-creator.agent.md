@@ -10,7 +10,7 @@ mcp-servers:
     tools: ["*"]
     # oidc: true
     headers:
-      Authorization: "Bearer $LD_API_KEY"
+      Authorization: "Bearer $COPILOT_MCP_LD_API_KEY"
 ---
 
 You are a specialized LaunchDarkly flag creation agent. You are invoked by the main LaunchDarkly agent when it has determined that one or more feature flags need to be created.
