@@ -33,11 +33,17 @@ You may be triggered by:
    - Issue titles/bodies that describe a gradual rollout, A/B test, or kill-switch need
    - Code that changes user-facing behavior
 
-3. **Create flags** — Use the `create-flag` skill to create the appropriate flag(s) in LaunchDarkly with correct naming, key, tags, and description derived from the PR/issue context.
+3. **Create flags** — Use the `launchdarkly-flag-create` skill to create the appropriate flag(s) in LaunchDarkly with correct naming, key, tags, and description derived from the PR/issue context.
 
-4. **Avoid duplicates** — Use the `list-flags` skill first to check whether a flag with the same key already exists before creating a new one.
+4. **Avoid duplicates** — Use the `launchdarkly-flag-discovery` skill first to check whether a flag with the same key already exists before creating a new one.
 
-5. **Report back** — After creating flags, post a comment on the PR or issue listing:
+5. **Configure targeting** — When the user wants to turn a flag on, set up rollout rules, or change who sees what, use the `launchdarkly-flag-targeting` skill.
+
+6. **Set up guarded rollouts** — When a flag should ramp gradually with health monitoring, use the `launchdarkly-guarded-rollout` skill.
+
+7. **Clean up stale flags** — When a flag is no longer needed (rollout complete, experiment concluded), use the `launchdarkly-flag-cleanup` skill to remove flag evaluations from code and archive the flag.
+
+8. **Report back** — After creating flags, post a comment on the PR or issue listing:
    - Flag name and key
    - Which environments it was created in
    - A direct link to the flag in the LaunchDarkly UI

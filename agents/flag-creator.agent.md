@@ -29,8 +29,10 @@ When invoked, you will receive a structured description containing:
 
 ## What you do
 
-1. Call the LaunchDarkly MCP `create_feature_flag` tool with the provided parameters.
-2. Verify the flag was created by calling `get_feature_flag`.
+Delegate the actual flag creation workflow to the `launchdarkly-flag-create` skill, which guides codebase exploration, flag-type selection, creation, and verification. Then:
+
+1. Invoke the `launchdarkly-flag-create` skill with the provided parameters (it calls the LaunchDarkly MCP `create-flag` tool internally).
+2. Verify the flag was created via the skill's `get-flag` step.
 3. Return a structured result with:
    - `success`: boolean
    - `flag_key`: the created flag's key
