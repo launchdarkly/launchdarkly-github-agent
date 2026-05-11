@@ -4,7 +4,7 @@ description: Automatically creates and manages LaunchDarkly feature flags and AI
 disable-model-invocation: false
 tools: ["view", "edit"]
 mcp-servers:
-  launchdarkly:
+  launchdarkly1:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]

@@ -4,7 +4,7 @@ description: Specialized sub-agent that handles the structured workflow for crea
 disable-model-invocation: false
 tools: []
 mcp-servers:
-  launchdarkly:
+  launchdarkly1:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]
