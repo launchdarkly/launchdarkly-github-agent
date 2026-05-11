@@ -8,7 +8,6 @@ mcp-servers:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]
-    # oidc: true
     headers:
       Authorization: "Bearer $COPILOT_MCP_LD_API_KEY"
 ---
