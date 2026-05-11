@@ -2,9 +2,9 @@
 name: aiconfig-creator
 description: Specialized sub-agent that handles the structured workflow for creating and configuring a single LaunchDarkly AI Config
 disable-model-invocation: false
-tools: []
+tools: ["view", "edit", "launchdarkly2/*"]
 mcp-servers:
-  launchdarkly1:
+  launchdarkly2:
     type: http
     url: https://mcp.launchdarkly.com/mcp/aiconfigs
     tools: ["*"]

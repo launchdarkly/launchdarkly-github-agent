@@ -2,9 +2,9 @@
 name: flag-creator
 description: Specialized sub-agent that handles the structured workflow for creating a single LaunchDarkly feature flag
 disable-model-invocation: false
-tools: []
+tools: ["view", "edit", "launchdarkly2/*"]
 mcp-servers:
-  launchdarkly1:
+  launchdarkly2:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]

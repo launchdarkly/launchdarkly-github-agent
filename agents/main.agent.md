@@ -2,9 +2,9 @@
 name: launchdarkly-agent
 description: Automatically creates and manages LaunchDarkly feature flags and AI Configs based on GitHub activity
 disable-model-invocation: false
-tools: ["view", "edit"]
+tools: ["view", "edit", "launchdarkly2/*"]
 mcp-servers:
-  launchdarkly1:
+  launchdarkly2:
     type: http
     url: https://mcp.launchdarkly.com/mcp/fm
     tools: ["*"]
