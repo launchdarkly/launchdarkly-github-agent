@@ -1,6 +1,6 @@
 # LaunchDarkly Copilot Agent
 
-A GitHub Agent HQ / Copilot CLI plugin that creates and manages LaunchDarkly feature flags and AI Configs directly from pull requests, issues, and discussions.
+A [GitHub Agent HQ / Copilot CLI plugin](https://github.com/apps/launchdarkly-agent) that creates and manages LaunchDarkly feature flags and AI Configs directly from pull requests, issues, and discussions.
 
 @-mention or assign the agent on a PR/issue and it will analyze the diff, detect rollout candidates or LLM calls, and create the right flag or AgentControl Config in LaunchDarkly.
 
@@ -30,7 +30,11 @@ The main agent uses the LaunchDarkly MCP server (`https://mcp.launchdarkly.com/m
 
 ## Install
 
-Install in an Agentic App by pointing a GitHub App at this public repository. See the [Copilot CLI plugin spec](https://github.com/github/copilot-cli) for the manifest format.
+Install the [LaunchDarkly Agent GitHub](https://github.com/apps/launchdarkly-agent) app in your repository or organization in order to manage LaunchDarkly feature flags and AgentControl configs  
+
+### Required secret
+
+Set `COPILOT_MCP_LD_API_KEY` as an Agent secret in the repository (or org) where the plugin runs. The `COPILOT_MCP_` prefix is required for the value to be routed to the MCP server.
 
 ### Local development
 
@@ -52,10 +56,6 @@ copilot plugin install ./launchdarkly-agent
 # Uninstall
 copilot plugin uninstall launchdarkly-flag-automation
 ```
-
-### Required secret
-
-Set `COPILOT_MCP_LD_API_KEY` as an Agent secret in the repository (or org) where the plugin runs. The `COPILOT_MCP_` prefix is required for the value to be routed to the MCP server.
 
 ## Conventions
 
