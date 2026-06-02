@@ -1,8 +1,8 @@
 # LaunchDarkly Copilot Agent
 
-A [GitHub Agent HQ / Copilot CLI plugin](https://github.com/apps/launchdarkly-agent) that creates and manages LaunchDarkly feature flags and AI Configs directly from pull requests, issues, and discussions.
+A [GitHub Agent HQ & Copilot CLI plugin](https://github.com/apps/launchdarkly-agent) that creates and manages LaunchDarkly feature flags and AI Configs directly from pull requests, issues, and discussions.
 
-@-mention or assign the agent on a PR/issue and it will analyze the diff, detect rollout candidates or LLM calls, and create the right flag or AgentControl Config in LaunchDarkly.
+Install the [GitHub app](https://github.com/apps/launchdarkly-agent), then @-mention or assign the agent on a PR/issue and it will analyze the diff, detect rollout candidates or LLM calls, and create the right flag or AgentControl Config in LaunchDarkly.
 
 ## What it does
 
