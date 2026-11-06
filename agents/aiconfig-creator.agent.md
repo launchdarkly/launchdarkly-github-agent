@@ -6,7 +6,7 @@ tools: ["view", "edit", "launchdarkly2/*"]
 mcp-servers:
   launchdarkly2:
     type: http
-    url: https://mcp.launchdarkly.com/mcp/aiconfigs
+    url: https://mcp.launchdarkly.com/mcp?toolsets=agent-control
     tools: ["*"]
     headers:
       Authorization: "Bearer $COPILOT_MCP_LD_API_KEY"
